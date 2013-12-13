@@ -1,0 +1,4 @@
+magd_kudama_custom_route:
+    resource: "@MagdKudamaCustomRouteBundle/Resources/config/routing.yml"
+    prefix:   /
+

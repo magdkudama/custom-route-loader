@@ -1,0 +1,9 @@
+parameters:
+    magd_kudama_custom_route.routing.basic_rest.class: MagdKudama\CustomRouteBundle\Routing\BasicRest\BasicRestLoader
+
+services:
+    magd_kudama_custom_route.routing.basic_rest:
+        class: %magd_kudama_custom_route.routing.basic_rest.class%
+        arguments: ["@file_locator"]
+        tags:
+            - { name: routing.loader }

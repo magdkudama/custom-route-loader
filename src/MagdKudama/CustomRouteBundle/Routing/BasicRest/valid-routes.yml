@@ -1,0 +1,31 @@
+getall:
+  methods_allowed: ['get']
+  callback_action: 'getAllAction'
+
+get:
+  methods_allowed: ['get']
+  callback_action: 'getOneAction'
+  parameters:
+      - name: 'id'
+        requirement: '\d+'
+  extra: '{id}'
+
+post:
+  methods_allowed: ['post']
+  callback_action: 'postAction'
+
+put:
+  methods_allowed: ['put']
+  callback_action: 'putAction'
+  parameters:
+      - name: 'id'
+        requirement: '\d+'
+  extra: '{id}'
+
+delete:
+  methods_allowed: ['delete']
+  callback_action: 'deleteAction'
+  parameters:
+      - name: 'id'
+        requirement: '\d+'
+  extra: '{id}'

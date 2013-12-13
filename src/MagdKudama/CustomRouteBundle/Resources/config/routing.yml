@@ -1,0 +1,3 @@
+cients_rest:
+    resource: "@MagdKudamaCustomRouteBundle/Controller/ClientController.php"
+    type: basic_rest
